@@ -9,17 +9,17 @@ export const ContainerSC = styled.section`
 
   display: grid;
   gap: 2rem;
-  grid-template-columns: 350px 5fr 1fr;
-  grid-template-rows: 70px 1fr 1fr 100px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-areas:
-    'header header header'
-    'sidebar contentMap contentMap'
-    'sidebar contentBus contentInf'
-    'footer footer footer';
+    'headerSC headerSC'
+    'sidebarSC contentSC'
+    'sidebarSC contentSC'
+    'footerSC footerSC';
 
   background: ${(props) => props.theme.background.primary};
 
-  @media (max-width: 1025px) {
+  /*   @media (max-width: 1025px) {
     font-size: 87.5%;
     height: 100%;
     grid-template-columns: repeat(3, 1fr);
@@ -30,5 +30,5 @@ export const ContainerSC = styled.section`
       'contentBus contentBus contentBus'
       'contentInf contentInf contentInf'
       'footer footer footer';
-  }
+  } */
 `;
