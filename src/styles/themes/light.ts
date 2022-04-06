@@ -5,12 +5,12 @@ export default {
     fontDefault: 'Roboto, sans-serif',
   },
   color: {
-    primary: '#393E46',
-    secondary: '#EEEEEE',
+    primary: '#858383',
+    secondary: '#6D0BEB',
   },
   background: {
-    primary: '#EEEEEE',
-    secondary: '#393E46',
+    primary: '#FFFFFF',
+    secondary: '#F1E1FF',
   },
   boxShadow: {
     primary:
