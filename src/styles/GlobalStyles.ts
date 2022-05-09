@@ -6,11 +6,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  font: 400 1rem "Inter", sans-serif;
-  max-width: 1440px;
-  margin: 0 auto;
   padding: 0;
+  margin: 0 auto;
+  font: 400 1rem "Inter", sans-serif;
+  background: ${(props) => props.theme.background.primary};
 }
+
 
 ::-webkit-scrollbar {
   width: 12px

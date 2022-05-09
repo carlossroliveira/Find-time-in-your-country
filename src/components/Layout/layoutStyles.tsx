@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const ContainerSC = styled.section`
+  max-width: 1440px;
   margin: 0 auto;
   height: 100vh;
   padding: 3rem;
 
   box-sizing: border-box;
-
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -16,8 +16,6 @@ export const ContainerSC = styled.section`
     'sidebarSC contentSC'
     'sidebarSC contentSC'
     'footerSC footerSC';
-
-  background: ${(props) => props.theme.background.primary};
 
   /*   @media (max-width: 1025px) {
     font-size: 87.5%;

@@ -3,19 +3,15 @@
 // -------------------------------------------------
 import React from 'react';
 // -------------------------------------------------
-// Components
-// -------------------------------------------------
-import { Search } from '../../../Search';
-// -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { ContainerSC } from './headerStyles';
+import { BsSearchSC, ContainerSC, InputSC } from './searchStyles';
 
-export const Header = (): JSX.Element => {
+export const Search = (): JSX.Element => {
   return (
     <ContainerSC>
-      <Search />
-      <div>Button</div>
+      <InputSC type="text" placeholder="Search" />
+      <BsSearchSC />
     </ContainerSC>
   );
 };
