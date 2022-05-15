@@ -17,16 +17,12 @@ export const ContainerSC = styled.section`
     'sidebarSC contentSC'
     'footerSC footerSC';
 
-  /*   @media (max-width: 1025px) {
+  @media (max-width: 768px) {
     font-size: 87.5%;
-    height: 100%;
-    grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      'header header header'
-      'sidebar sidebar sidebar'
-      'contentMap contentMap contentMap'
-      'contentBus contentBus contentBus'
-      'contentInf contentInf contentInf'
-      'footer footer footer';
-  } */
+      'headerSC'
+      'sidebarSC'
+      'contentSC'
+      'footerSC';
+  }
 `;

@@ -6,6 +6,7 @@ import React from 'react';
 // Components
 // -------------------------------------------------
 import { Search } from '../../../Search';
+import { SwitchComponent } from '../../../SwitchComponent';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -15,7 +16,7 @@ export const Header = (): JSX.Element => {
   return (
     <ContainerSC>
       <Search />
-      <div>Button</div>
+      <SwitchComponent />
     </ContainerSC>
   );
 };

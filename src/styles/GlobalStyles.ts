@@ -9,7 +9,7 @@ body {
   padding: 0;
   margin: 0 auto;
   font: 400 1rem "Inter", sans-serif;
-  background: ${(props) => props.theme.background.primary};
+  background: ${(props) => props.theme.color_background.primary};
 }
 
 
@@ -17,11 +17,11 @@ body {
   width: 12px
 }
 ::-webkit-scrollbar-thumb {
-  background: ${(props) => props.theme.background.primary};
+  background: ${(props) => props.theme.color_background.primary};
   border-radius: 50px;
-  border: 1px solid ${(props) => props.theme.background.primary};
+  border: 1px solid ${(props) => props.theme.color_background.primary};
 }
 ::-webkit-scrollbar-button {
-  background: ${(props) => props.theme.background.primary};
+  background: ${(props) => props.theme.color_background.primary};
 }
 `;

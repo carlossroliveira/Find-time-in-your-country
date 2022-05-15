@@ -16,13 +16,11 @@ export interface ITheme {
   fontFamily: {
     fontDefault: string;
   };
-  color: {
+  color_background: {
     primary: string;
     secondary: string;
-  };
-  background: {
-    primary: string;
-    secondary: string;
+    tertiary: string;
+    quaternary: string;
   };
   boxShadow: {
     primary: string;

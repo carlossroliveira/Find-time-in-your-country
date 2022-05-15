@@ -4,13 +4,11 @@ export default {
   fontFamily: {
     fontDefault: 'Roboto, sans-serif',
   },
-  color: {
-    primary: '#858383',
-    secondary: '#6D0BEB',
-  },
-  background: {
+  color_background: {
     primary: '#FFFFFF',
     secondary: '#F1E1FF',
+    tertiary: '#6D0BEB',
+    quaternary: '#858383',
   },
   boxShadow: {
     primary:

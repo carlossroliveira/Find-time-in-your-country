@@ -7,14 +7,13 @@ declare module 'styled-components' {
     fontFamily: {
       fontDefault: string;
     };
-    color: {
+    color_background: {
       primary: string;
       secondary: string;
+      tertiary: string;
+      quaternary: string;
     };
-    background: {
-      primary: string;
-      secondary: string;
-    };
+
     boxShadow: {
       primary: string;
     };
