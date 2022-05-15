@@ -7,8 +7,8 @@ export const ContainerSC = styled.section`
 export const InputSC = styled.input`
   outline: none;
   border-radius: 5px;
-  background-color: ${({ theme }) => theme.color_background.secondary};
-  border: 1px solid ${({ theme }) => theme.color_background.secondary};
+  background-color: ${({ theme }) => theme.color_background.quaternary};
+  border: 1px solid ${({ theme }) => theme.color_background.quaternary};
 
   width: 400px;
   height: 60px;
@@ -16,16 +16,16 @@ export const InputSC = styled.input`
   text-indent: 2rem;
   font-size: 1.5rem;
 
-  color: ${({ theme }) => theme.color_background.primary};
+  color: ${({ theme }) => theme.fontDefault.secondary};
 
   ::-webkit-input-placeholder {
-    color: ${({ theme }) => theme.color_background.primary};
+    color: ${({ theme }) => theme.fontDefault.secondary};
   }
   ::-moz-placeholder {
-    color: ${({ theme }) => theme.color_background.primary};
+    color: ${({ theme }) => theme.fontDefault.secondary};
   }
   :-ms-input-placeholder {
-    color: ${({ theme }) => theme.color_background.primary};
+    color: ${({ theme }) => theme.fontDefault.secondary};
   }
 
   transition: filter 0.2s;
@@ -36,10 +36,10 @@ export const InputSC = styled.input`
 `;
 export const BsSearchSC = styled(BsSearch)`
   position: absolute;
+  border-radius: 4px;
   color: ${({ theme }) => theme.color_background.primary};
   background-color: ${({ theme }) => theme.color_background.tertiary};
-  border: 1px solid ${({ theme }) => theme.color_background.secondary};
-  border-radius: 4px;
+  border: 1px solid ${({ theme }) => theme.color_background.quaternary};
 
   cursor: pointer;
   right: 0;

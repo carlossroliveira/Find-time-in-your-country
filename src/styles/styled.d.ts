@@ -13,7 +13,10 @@ declare module 'styled-components' {
       tertiary: string;
       quaternary: string;
     };
-
+    fontDefault: {
+      primary: string;
+      secondary: string;
+    };
     boxShadow: {
       primary: string;
     };

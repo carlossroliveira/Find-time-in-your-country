@@ -6,9 +6,13 @@ export default {
   },
   color_background: {
     primary: '#FFFFFF',
-    secondary: '#F1E1FF',
+    secondary: '#858383',
     tertiary: '#6D0BEB',
-    quaternary: '#858383',
+    quaternary: '#F1E0FE',
+  },
+  fontDefault: {
+    primary: '#858383',
+    secondary: '#6D0BEB',
   },
   boxShadow: {
     primary:

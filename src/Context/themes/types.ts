@@ -22,6 +22,10 @@ export interface ITheme {
     tertiary: string;
     quaternary: string;
   };
+  fontDefault: {
+    primary: string;
+    secondary: string;
+  };
   boxShadow: {
     primary: string;
   };
