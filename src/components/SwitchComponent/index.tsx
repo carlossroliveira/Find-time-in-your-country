@@ -6,7 +6,7 @@ import { useMyHook } from '../../Context/themes/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { ContainerSC, Toggle } from './SwitchComponentStyles';
+import { ContainerSC, TitleSC, Toggle } from './SwitchComponentStyles';
 
 export const SwitchComponent = (): JSX.Element => {
   const { handleThemes } = useMyHook();
@@ -25,6 +25,7 @@ export const SwitchComponent = (): JSX.Element => {
         checkedIcon={false}
         onChange={handleThemesFc}
       />
+      <TitleSC>Country Time</TitleSC>
     </ContainerSC>
   );
 };

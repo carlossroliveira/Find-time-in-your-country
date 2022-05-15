@@ -1,7 +1,15 @@
 import styled from 'styled-components';
 import Switch, { ReactSwitchProps } from 'react-switch';
 
-export const ContainerSC = styled.section``;
+export const ContainerSC = styled.section`
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 882px) {
+    gap: 10px;
+    margin: 10px 0 0 10px;
+  }
+`;
 
 export const Toggle = styled(Switch).attrs<ReactSwitchProps>(({ theme }) => ({
   onColor: theme.color_background.tertiary,
@@ -10,8 +18,11 @@ export const Toggle = styled(Switch).attrs<ReactSwitchProps>(({ theme }) => ({
   offHandleColor: theme.color_background.tertiary,
 }))<ReactSwitchProps>``;
 
-export const ParagraphSC = styled.p`
-  margin-bottom: 3rem;
-  font-weight: 600;
-  font-style: italic;
+export const TitleSC = styled.h1`
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.fontDefault.secondary};
+
+  @media (max-width: 879px) {
+    text-align: center;
+  }
 `;

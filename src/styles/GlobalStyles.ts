@@ -12,8 +12,7 @@ body {
   background: ${(props) => props.theme.color_background.primary};
 }
 
-
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 12px
 }
 ::-webkit-scrollbar-thumb {
@@ -23,5 +22,5 @@ body {
 }
 ::-webkit-scrollbar-button {
   background: ${(props) => props.theme.color_background.primary};
-}
+} */
 `;
