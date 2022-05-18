@@ -10,7 +10,6 @@ export const ContainerSC = styled.section`
     margin: 10px 0 0 10px;
   }
 `;
-
 export const Toggle = styled(Switch).attrs<ReactSwitchProps>(({ theme }) => ({
   onColor: theme.color_background.tertiary,
   offColor: theme.color_background.quaternary,

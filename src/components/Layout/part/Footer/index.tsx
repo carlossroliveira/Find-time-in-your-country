@@ -5,12 +5,21 @@ import React from 'react';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { ContainerSC } from './footerStyles';
+import {
+  ContainerSC,
+  DivFirstSC,
+  DivSecondSC,
+  ParagraphSC,
+} from './footerStyles';
 
 export const Footer = (): JSX.Element => {
+  const currentYear: number = new Date().getFullYear();
+
   return (
     <ContainerSC>
-      <h1>Footer</h1>
+      <DivFirstSC>React Icon</DivFirstSC>
+      <ParagraphSC>&copy; {currentYear} | Carlos Oliveira</ParagraphSC>
+      <DivSecondSC>Redes Icon</DivSecondSC>
     </ContainerSC>
   );
 };

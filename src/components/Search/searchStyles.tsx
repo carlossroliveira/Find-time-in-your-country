@@ -4,6 +4,7 @@ import { BsSearch } from 'react-icons/bs';
 export const ContainerSC = styled.section`
   position: relative;
 `;
+
 export const InputSC = styled.input`
   outline: none;
   border-radius: 5px;
@@ -34,6 +35,7 @@ export const InputSC = styled.input`
     filter: brightness(0.8);
   }
 `;
+
 export const BsSearchSC = styled(BsSearch)`
   position: absolute;
   border-radius: 4px;
@@ -48,4 +50,10 @@ export const BsSearchSC = styled(BsSearch)`
   font-size: 30px;
   padding: 15px;
   width: 60px;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.8);
+  }
 `;
