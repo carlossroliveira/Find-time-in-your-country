@@ -3,12 +3,20 @@
 // -------------------------------------------------
 import React from 'react';
 // -------------------------------------------------
+// Image
+// -------------------------------------------------
+import Photos from '../../../../assets/logo192.png';
+// -------------------------------------------------
 // Styles
 // -------------------------------------------------
 import {
+  CodeSandboxSC,
   ContainerSC,
   DivFirstSC,
   DivSecondSC,
+  FillGithubSC,
+  ImgSC,
+  LinkedinSC,
   ParagraphSC,
 } from './footerStyles';
 
@@ -17,9 +25,15 @@ export const Footer = (): JSX.Element => {
 
   return (
     <ContainerSC>
-      <DivFirstSC>React Icon</DivFirstSC>
+      <DivFirstSC>
+        <ImgSC src={Photos} alt="testing" />
+      </DivFirstSC>
       <ParagraphSC>&copy; {currentYear} | Carlos Oliveira</ParagraphSC>
-      <DivSecondSC>Redes Icon</DivSecondSC>
+      <DivSecondSC>
+        <LinkedinSC />
+        <FillGithubSC />
+        <CodeSandboxSC />
+      </DivSecondSC>
     </ContainerSC>
   );
 };
