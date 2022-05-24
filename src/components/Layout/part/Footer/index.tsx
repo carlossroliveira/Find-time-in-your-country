@@ -10,6 +10,7 @@ import Photos from '../../../../assets/logo192.png';
 // Styles
 // -------------------------------------------------
 import {
+  Ahref,
   CodeSandboxSC,
   ContainerSC,
   DivFirstSC,
@@ -30,9 +31,20 @@ export const Footer = (): JSX.Element => {
       </DivFirstSC>
       <ParagraphSC>&copy; {currentYear} | Carlos Oliveira</ParagraphSC>
       <DivSecondSC>
-        <LinkedinSC />
-        <FillGithubSC />
-        <CodeSandboxSC />
+        <Ahref
+          href="https://www.linkedin.com/in/carlos-oliveira-ab93941a1/"
+          target="_blank"
+        >
+          <LinkedinSC />
+        </Ahref>
+
+        <Ahref href="https://github.com/carlossroliveira" target="_blank">
+          <FillGithubSC />
+        </Ahref>
+
+        <Ahref href="https://codepen.io/your-work" target="_blank">
+          <CodeSandboxSC />
+        </Ahref>
       </DivSecondSC>
     </ContainerSC>
   );
