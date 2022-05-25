@@ -9,6 +9,7 @@ export const ContainerSC = styled.section`
   justify-content: space-between;
 
   @media (max-width: 768px) {
+    padding: 0;
     display: flex;
     flex-direction: column;
   }

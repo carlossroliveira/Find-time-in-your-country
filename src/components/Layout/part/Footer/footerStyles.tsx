@@ -35,7 +35,7 @@ export const ContainerSC = styled.section`
   align-items: center;
   text-align: center;
 
-  @media (max-width: 715px) and (min-width: 503px) {
+  @media (max-width: 715px) and (min-width: 472px) {
     gap: 2rem;
     display: flex;
     margin: 0 auto;
