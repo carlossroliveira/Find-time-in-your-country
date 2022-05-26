@@ -18,10 +18,10 @@ export const Aside = (): JSX.Element => {
   return (
     <ContainerSC>
       <SpanSC>Country</SpanSC>
-      <CountrySC>United Kingdom</CountrySC>
+      <CountrySC>Brasil</CountrySC>
 
       <SpanSC>State</SpanSC>
-      <StateSC>England</StateSC>
+      <StateSC>Salvador</StateSC>
 
       <SpanSC>Date</SpanSC>
       <DateSC>2020-12-21</DateSC>

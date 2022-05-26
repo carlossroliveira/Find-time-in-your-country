@@ -2,20 +2,41 @@ import styled, { css } from 'styled-components';
 
 const STYLE_DEFAULT = css`
   margin: 0 auto;
-  font-size: 2rem;
+  font-size: calc(1rem + 1vw);
   color: ${({ theme }) => theme.fontDefault.secondary};
+`;
+export const COMPONENT_SIZE_STYLE = css`
+  padding: 40px 50px;
+  height: 20rem;
+  margin-top: 3rem;
 `;
 
 export const ContainerSC = styled.section`
   grid-area: sidebarSC;
 
-  height: 15rem;
-  margin-top: 35px;
+  ${COMPONENT_SIZE_STYLE}
+
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 
   display: grid;
   align-items: flex-start;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
+
+  @media (max-width: 1030px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 0 0;
+    span {
+      text-align: center;
+      margin: 0 0 10px 0;
+      padding: 5px 0 5px 0;
+    }
+    p {
+      margin: 5px 0;
+    }
+  }
 `;
 export const CountrySC = styled.p`
   ${STYLE_DEFAULT}
