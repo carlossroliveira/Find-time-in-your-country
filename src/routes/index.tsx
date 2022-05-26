@@ -13,6 +13,9 @@ export const Routes = (): JSX.Element => {
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Layout} />
+        <Route path="*">
+          <h1>Pagina não existe</h1>
+        </Route>
       </Switch>
     </BrowserRouter>
   );

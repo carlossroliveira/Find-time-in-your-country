@@ -7,7 +7,7 @@ export const ContainerSC = styled.section`
   align-items: center;
   @media (max-width: 882px) {
     gap: 10px;
-    margin: 10px 0 0 10px;
+    margin: 25px 0 0 10px;
   }
 `;
 export const Toggle = styled(Switch).attrs<ReactSwitchProps>(({ theme }) => ({
