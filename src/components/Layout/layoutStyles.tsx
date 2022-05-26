@@ -8,7 +8,7 @@ export const ContainerSC = styled.section`
   box-sizing: border-box;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: 100px 1fr 200px;
   grid-template-areas:
     'headerSC headerSC'

@@ -42,7 +42,10 @@ export const Footer = (): JSX.Element => {
           <FillGithubSC />
         </Ahref>
 
-        <Ahref href="https://codepen.io/your-work" target="_blank">
+        <Ahref
+          href="https://carlossroliveira.github.io/Portfolio/"
+          target="_blank"
+        >
           <CodeSandboxSC />
         </Ahref>
       </DivSecondSC>

@@ -1,11 +1,11 @@
 import {
   AiOutlineLinkedin,
   AiFillGithub,
-  AiFillCodeSandboxCircle,
+  AiOutlineGlobal,
 } from 'react-icons/ai';
 import styled, { css, keyframes } from 'styled-components';
 
-const effectImg = keyframes`
+const EFFECT_IMG = keyframes`
 from {
     transform: rotate(0deg);
   }
@@ -46,7 +46,7 @@ export const DivFirstSC = styled.div``;
 
 export const ImgSC = styled.img`
   width: 5rem;
-  animation: ${effectImg} infinite 20s linear;
+  animation: ${EFFECT_IMG} infinite 20s linear;
 `;
 
 export const ParagraphSC = styled.p`
@@ -71,6 +71,6 @@ export const FillGithubSC = styled(AiFillGithub)`
   ${SVG}
 `;
 
-export const CodeSandboxSC = styled(AiFillCodeSandboxCircle)`
+export const CodeSandboxSC = styled(AiOutlineGlobal)`
   ${SVG}
 `;
