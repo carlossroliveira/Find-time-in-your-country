@@ -8,7 +8,7 @@ const STYLE_DEFAULT = css`
 export const COMPONENT_SIZE_STYLE = css`
   padding: 40px 50px;
   height: 20rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 `;
 
 export const ContainerSC = styled.section`
@@ -23,7 +23,7 @@ export const ContainerSC = styled.section`
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 1fr);
 
-  @media (max-width: 1030px) {
+  @media (max-width: 1048px) {
     display: flex;
     flex-direction: column;
     align-items: center;

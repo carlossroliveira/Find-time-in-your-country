@@ -2,6 +2,7 @@
 // Packages
 // -------------------------------------------------
 import React from 'react';
+import { useMyHookApplication } from '../../../../Context/contextApplication/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
@@ -15,19 +16,24 @@ import {
 } from './asideStyles';
 
 export const Aside = (): JSX.Element => {
+  const date = useMyHookApplication();
   return (
     <ContainerSC>
       <SpanSC>Country</SpanSC>
-      <CountrySC>Brasil</CountrySC>
+      <CountrySC>
+        {date.data?.geo.country || date.data?.geo.country_name}
+      </CountrySC>
 
       <SpanSC>State</SpanSC>
-      <StateSC>Salvador</StateSC>
+      <StateSC>
+        {date.data?.timezone.split('/', 2)[1].replace('_', ' ')}
+      </StateSC>
 
       <SpanSC>Date</SpanSC>
-      <DateSC>2020-12-21</DateSC>
+      <DateSC>{date.data?.date.split('-').reverse().join('/')}</DateSC>
 
       <SpanSC>Time</SpanSC>
-      <TimeSC>13:17:59</TimeSC>
+      <TimeSC>{date.data?.time_24}</TimeSC>
     </ContainerSC>
   );
 };

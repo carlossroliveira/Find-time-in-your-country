@@ -1,32 +1,26 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import React, { useState } from 'react';
+import React from 'react';
+import { useMyHookApplication } from '../../Context/contextApplication/ContextTheme';
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
 import { BsSearchSC, ContainerSC, InputSC } from './searchStyles';
 
 export const Search = (): JSX.Element => {
-  const [value, setValue] = useState<string | undefined>('');
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    setValue(event.target.value);
-  };
-
-  const handleClick = (): void => {
-    console.log(value);
-  };
+  const { storage, onChangeInformation, handleButtonAction } =
+    useMyHookApplication();
 
   return (
     <ContainerSC>
       <InputSC
         type="text"
         placeholder="Search"
-        value={value}
-        onChange={handleChange}
+        value={storage}
+        onChange={onChangeInformation}
       />
-      <BsSearchSC onClick={handleClick} />
+      <BsSearchSC onClick={() => handleButtonAction(storage)} />
     </ContainerSC>
   );
 };
