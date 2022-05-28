@@ -5,20 +5,21 @@ import React from 'react';
 
 import 'jest-styled-components';
 import '@testing-library/jest-dom';
-import { render } from '@testing-library/react';
+import { screen, render } from '@testing-library/react';
 // -------------------------------------------------
 // Components
 // -------------------------------------------------
-import { Layout } from '../../components/Layout';
+import { Aside } from '../../components/Layout/part/Aside';
 // -------------------------------------------------
 // Utils
 // -------------------------------------------------
 import WithThemeComponent from '../utils/withThemeComponent';
 
-const LayoutWithTheme = WithThemeComponent(Layout);
+const AsideWithTheme = WithThemeComponent(Aside);
 
-describe('Layout Testing', () => {
-  it('Should...', () => {
-    render(<LayoutWithTheme />);
+describe('Aside Testing', () => {
+  it('should render the component correctly.', () => {
+    render(<AsideWithTheme />);
+    expect(screen.getByText(/country/i)).toBeInTheDocument();
   });
 });
