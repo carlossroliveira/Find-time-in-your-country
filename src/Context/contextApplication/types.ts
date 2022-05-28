@@ -2,15 +2,17 @@
 // -------------------------------------------------
 // Packages
 // -------------------------------------------------
-import { ChangeEvent, ReactNode } from 'react';
+import { ChangeEvent, ReactNode, RefObject } from 'react';
 // -------------------------------------------------
 // Types
 // -------------------------------------------------
 export interface IContextApplication {
-  data: APIInformation | null;
   storage: string;
-  onChangeInformation: (_: ChangeEvent<HTMLInputElement>) => void;
+  loading: boolean;
+  data: APIInformation | null;
+  inputRef: RefObject<HTMLInputElement>;
   handleButtonAction: (_: string) => void;
+  onChangeInformation: (_: ChangeEvent<HTMLInputElement>) => void;
 }
 
 export interface IContextApplicationProvider {

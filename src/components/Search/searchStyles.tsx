@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { BsSearch } from 'react-icons/bs';
+import { Grid } from 'react-spinners-css';
 
 export const ContainerSC = styled.section`
   position: relative;
@@ -56,4 +57,9 @@ export const BsSearchSC = styled(BsSearch)`
   &:hover {
     filter: brightness(0.8);
   }
+`;
+
+export const GridSC = styled(Grid)`
+  right: 0;
+  position: absolute;
 `;

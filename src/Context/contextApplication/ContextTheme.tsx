@@ -6,6 +6,7 @@ import React, {
   createContext,
   useCallback,
   useContext,
+  useRef,
   useState,
 } from 'react';
 import { useFetch } from '../../hooks/useFetch';
@@ -25,9 +26,11 @@ export const ThemeProviderApplication = ({
 }: IContextApplicationProvider): JSX.Element => {
   const [countryName, setCountryName] = useState<string>('');
   const [storage, setStorage] = useState<string>('Brasil');
+  const [loading, setLoading] = useState<boolean>(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const { data } = useFetch<APIInformation>(
-    `https://api.ipgeolocation.io/timezone?apiKey=dd652bdab66546fd9e440f74abdac9b3&location=${countryName}`,
+    `https://api.ipgeolocation.io/timezone?apiKey=${process.env.REACT_APP_KEY}&location=${countryName}`,
   );
 
   const onChangeInformation = useCallback(
@@ -37,10 +40,14 @@ export const ThemeProviderApplication = ({
     [],
   );
 
+  const loadingFC = () => setLoading((value) => !value);
   const handleButtonAction = useCallback((informedValue: string) => {
-    /* setTimeout(() => {
-    }, 2000); */
-    setCountryName(informedValue);
+    loadingFC();
+    setTimeout(() => {
+      setCountryName(informedValue);
+      inputRef?.current?.focus();
+      loadingFC();
+    }, 2000);
 
     setStorage('');
   }, []);
@@ -49,7 +56,9 @@ export const ThemeProviderApplication = ({
     <Context.Provider
       value={{
         data,
+        loading,
         storage,
+        inputRef,
         onChangeInformation,
         handleButtonAction,
       }}

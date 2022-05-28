@@ -7,15 +7,14 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 // Components
 // -------------------------------------------------
 import { Layout } from '../components/Layout';
+import { Page } from '../components/Layout/part/Page';
 
 export const Routes = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" exact component={Layout} />
-        <Route path="*">
-          <h1>Pagina não existe</h1>
-        </Route>
+        <Route path="*" component={Page} />
       </Switch>
     </BrowserRouter>
   );

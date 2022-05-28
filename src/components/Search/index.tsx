@@ -6,21 +6,30 @@ import { useMyHookApplication } from '../../Context/contextApplication/ContextTh
 // -------------------------------------------------
 // Styles
 // -------------------------------------------------
-import { BsSearchSC, ContainerSC, InputSC } from './searchStyles';
+import { BsSearchSC, ContainerSC, GridSC, InputSC } from './searchStyles';
 
 export const Search = (): JSX.Element => {
-  const { storage, onChangeInformation, handleButtonAction } =
-    useMyHookApplication();
-
+  const {
+    loading,
+    inputRef,
+    storage,
+    onChangeInformation,
+    handleButtonAction,
+  } = useMyHookApplication();
   return (
     <ContainerSC>
       <InputSC
+        ref={inputRef}
         type="text"
         placeholder="Search"
         value={storage}
         onChange={onChangeInformation}
       />
-      <BsSearchSC onClick={() => handleButtonAction(storage)} />
+      {loading ? (
+        <GridSC color="#6D0BEB" size={60} />
+      ) : (
+        <BsSearchSC onClick={() => handleButtonAction(storage)} />
+      )}
     </ContainerSC>
   );
 };
