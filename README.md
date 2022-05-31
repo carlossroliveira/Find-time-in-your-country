@@ -1,6 +1,7 @@
 <h1 align="center"> 🚀 Find time in your country </h1>
 
 ---
+![pra gif](https://user-images.githubusercontent.com/63623377/171209628-188d907c-4236-42cd-95a2-04b87edf91ee.gif)
 ---
 
 ## Find time in your country
