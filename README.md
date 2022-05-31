@@ -1,7 +1,6 @@
 <h1 align="center"> 🚀 Find time in your country </h1>
 
 ---
-![First-Project_AdobeCreativeCloudExpress (1)](https://user-images.githubusercontent.com/63623377/171200834-ccd0ead8-5523-4e3a-af07-6d826c9053b2.gif)
 ---
 
 ## Find time in your country
